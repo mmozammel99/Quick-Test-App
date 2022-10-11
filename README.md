@@ -5,13 +5,19 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Description
 
 It is a completely free web application. Anyone can easily participate in its madam quiz in this quick test app.
+1.It's totally responsive web application.
+2.It's basically a 4-page application.
+3.It uses dynamic API.
+4.This site is programmed using Javascript React.
+5.This site is Designed using Bootstrap CSS.
+6.React Router is used to route it.
+7.It uses Recharts library to display statistics .
+8.3 blogs have been added to the blog page
+9.Add quizzes in 4 categories.
+10.Added Sweet alert 2 for correct and incorrect answers.
+11.Give the correct answer below the quiz.
 
-
-### Build Status
-
-This basically explains the current build status of the project. If there is a bug /error which needs addressing. This is done so for two different reasons The user understands that this is an issue and does not spend more time figuring if it was a mistake on their part.A developer who is familiar with the issue can suggest some solutions directly without going through the whole code.
-
-# `Live Link`
+# Live Link
 
 Runs the app in the development mode.\
 Open [https://delicate-sherbet-d0bc05.netlify.app/](https://delicate-sherbet-d0bc05.netlify.app/) to view it in your browser.
@@ -19,7 +25,7 @@ Open [https://delicate-sherbet-d0bc05.netlify.app/](https://delicate-sherbet-d0b
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-## `Repo Link`
+## Repo Link
 
 [https://github.com/programming-hero-web-course2/b6-quiz-crackerz-mmozammel99](https://github.com/programming-hero-web-course2/b6-quiz-crackerz-mmozammel99)
 

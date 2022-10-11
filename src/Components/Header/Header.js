@@ -9,7 +9,7 @@ import img from '../../logo.png';
 const Header = () => {
     return (
 
-        <Navbar collapseOnSelect expand="lg" bg="success" variant="dark">
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
                 <Navbar.Brand href="/"> <img src={img} alt="" /> Quick Test</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
