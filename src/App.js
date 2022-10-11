@@ -7,7 +7,7 @@ import Home from './Components/Home/Home';
 import Main from './Components/Main/Main';
 import About from './Components/About/About';
 import QuizPage from "./Components/QuizPage/QuizPage";
-import Statistics from "./Statistics/Statistics";
+import Statistics from "./Components/Statistics/Statistics";
 import Error from "./Components/Error/Error";
 
 function App() {

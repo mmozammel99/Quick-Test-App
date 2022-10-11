@@ -47,9 +47,10 @@ const Questions = ({ questions }) => {
                 <Card.Text>
                     <div className='row justify-content-center '>
                         {
-                            options.map(option => <Options
+                            options.map((option, index) => <Options
                                 option={option}
                                 handelOption={handelOption}
+                                key={index}
 
                             ></Options>)
                         }
