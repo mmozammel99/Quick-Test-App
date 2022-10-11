@@ -7,8 +7,7 @@ import Swal from 'sweetalert2'
 
 const Questions = ({ questions }) => {
     const { question, options, correctAnswer } = questions;
-
-
+    // sweet alert
     const Toast = Swal.mixin({
         toast: true,
         position: 'top-end',
@@ -26,9 +25,7 @@ const Questions = ({ questions }) => {
             Toast.fire({
                 icon: 'success',
                 title: 'Your Answer is correct'
-
             })
-
         }
         else {
             Toast.fire({
@@ -36,14 +33,12 @@ const Questions = ({ questions }) => {
                 title: 'your Answer is wring',
             }
             )
-
         }
     }
     return (
         <Card className="text-center col-10 col-md-7 mx-auto my-5 shadow-lg rounded border border-1 border-success p-0">
             <div className='bg-success text-light w-100 p-3 shadow'>{question}</div>
             <Card.Body>
-
                 <Card.Text>
                     <div className='row justify-content-center '>
                         {
@@ -51,17 +46,12 @@ const Questions = ({ questions }) => {
                                 option={option}
                                 handelOption={handelOption}
                                 key={index}
-
                             ></Options>)
                         }
-
                     </div>
                 </Card.Text>
                 <Ans correctAnswer={correctAnswer}> </Ans>
-
-
             </Card.Body>
-
         </Card>
     );
 }

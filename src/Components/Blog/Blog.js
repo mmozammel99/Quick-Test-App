@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 const Blog = () => {
     return (
         <div>
-            <h2 className="bg-success text-light text-center py-2">Blog</h2>
+            <h1 className=" text-success text-center my-3 py-2">Blog</h1>
             <Card border="success" className='mx-auto' style={{ width: '80%' }}>
                 <Card.Body>
                     <Card.Title>what is the purpose of react router?</Card.Title>

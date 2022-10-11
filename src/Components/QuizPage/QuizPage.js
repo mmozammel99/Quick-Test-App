@@ -9,17 +9,14 @@ const QuizPage = () => {
     return (
         <div className='text-center '>
             <img className='w-25' src={logo} alt="" />
-            <h3>{name} Quiz</h3>
-
+            <h1 className='text-success'>{name} Quiz</h1>
             <div className='row '>
                 {
                     questions.map(qus => <Questions
                         key={qus.id}
                         questions={qus}>
-
                     </Questions>)
                 }
-
             </div>
         </div>
     )
