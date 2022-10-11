@@ -9,7 +9,7 @@ const QuizPage = () => {
     return (
         <div className='text-center '>
             <img className='w-25' src={logo} alt="" />
-            <h1 className='text-success'>{name} Quiz</h1>
+            <h1 className='text-success'>Quiz of {name} </h1>
             <div className='row '>
                 {
                     questions.map(qus => <Questions
