@@ -10,13 +10,13 @@ const Quizitem = ({ quiz }) => {
         navigator(`/quiz/${id}`)
     }
     return (
-        <div className='card m-4 text-canter ' style={{ width: '25rem' }}>
+        <div className='card m-4 text-canter shadow' style={{ width: '25rem' }}>
             <Card.Img variant="top" className='w-auto m-2' src={logo} />
             <Card.Body >
                 <Card.Title className='text-center pb-3 '><h3>{name}</h3></Card.Title>
                 <div className='d-flex align-items-center justify-content-between'>
                     <Button onClick={quizHandel} variant="success">Start Quiz</Button>
-                    <h6>Total Quiz {total}</h6>
+                    <h6>Total Quiz : {total}</h6>
                 </div>
             </Card.Body>
         </div>

@@ -5,7 +5,7 @@ const Blog = () => {
     return (
         <div>
             <h1 className=" text-success text-center my-3 py-2">Blog</h1>
-            <Card border="success" className='mx-auto' style={{ width: '80%' }}>
+            <Card border="success" className='mx-auto shadow' style={{ width: '80%' }}>
                 <Card.Body>
                     <Card.Title>what is the purpose of react router?</Card.Title>
                     <Card.Text>
@@ -22,7 +22,7 @@ const Blog = () => {
                 </Card.Body>
             </Card>
             <br />
-            <Card border="success" className='mx-auto' style={{ width: '80%' }}>
+            <Card border="success" className='mx-auto shadow' style={{ width: '80%' }}>
                 <Card.Body>
                     <Card.Title>React Context API: What is it and How it works?</Card.Title>
                     <Card.Text>
@@ -40,7 +40,7 @@ const Blog = () => {
                 </Card.Body>
             </Card>
             <br />
-            <Card border="success" className='mx-auto' style={{ width: '80%' }}>
+            <Card border="success" className='mx-auto shadow' style={{ width: '80%' }}>
                 <Card.Body>
                     <Card.Title>React JS useRef Hook</Card.Title>
                     <Card.Text>

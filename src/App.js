@@ -5,7 +5,7 @@ import {
 import Blog from "./Components/Blog/Blog";
 import Home from './Components/Home/Home';
 import Main from './Components/Main/Main';
-import About from './Components/About/About';
+import Contact from './Components/Contact/Contact';
 import QuizPage from "./Components/QuizPage/QuizPage";
 import Statistics from "./Components/Statistics/Statistics";
 import Error from "./Components/Error/Error";
@@ -29,7 +29,7 @@ function App() {
           }, element: <Statistics></Statistics>
         },
         { path: 'blog', element: <Blog></Blog> },
-        { path: 'about', element: <About></About> },
+        { path: 'contact', element: <Contact></Contact> },
         {
           path: '/quiz/:quizId',
           loader: async ({ params }) => {

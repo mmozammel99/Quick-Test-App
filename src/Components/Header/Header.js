@@ -9,8 +9,8 @@ import img from '../../logo.png';
 const Header = () => {
     return (
 
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Container>
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" >
+            <Container >
                 <Navbar.Brand href="/"> <img src={img} alt="" /> Quick Test</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav" className='justify-content-end'>
@@ -19,7 +19,7 @@ const Header = () => {
                         <Link className='text-light text-decoration-none me-5' to="/" >Home</Link>
                         <Link className='text-light text-decoration-none me-5' to="/statistics" >Statistics</Link>
                         <Link className='text-light text-decoration-none me-5' to="/blog" >Blog</Link>
-                        <Link className='text-light text-decoration-none me-5' to="/about" >About us</Link>
+                        <Link className='text-light text-decoration-none me-5' to="/Contact" >Contact</Link>
 
 
 
