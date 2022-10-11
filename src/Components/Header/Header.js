@@ -1,36 +1,38 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
-import React, { useState } from 'react';
-import logo from '../../logo.png'
+import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
-import './Header.css'
+import img from '../../logo.png';
+
 
 const Header = () => {
-    const [open, setOpen] = useState(false);
     return (
+        <div>
 
-        <nav >
-            <div className="navbar bg-base-100 drop-shadow">
-                <div className="flex-1">
-                    <a className="btn btn-ghost normal-case font-bold text-2xl" href='/home'><img className='mr-1 w-8' src={logo} alt="" />Quiz Time</a>
-                </div>
-                <div onClick={() => setOpen(!open)} className="md:hidden">
-                    {
-                        open ? <FontAwesomeIcon className='text-3xl' icon={faXmark} /> : <FontAwesomeIcon className='text-3xl' icon={faBars} />
-                    }
-                </div>
-                <div className='flex  justify-center'>
-                   <div className='h-52 flex-col '>
-                   <Link className='mx-5 font-semibold'  to="/">Home</Link>
-                    <Link className='mx-5 font-semibold'  to='quiz'>Quiz</Link>
-                    <Link className='mx-5 font-semibold' to='statistics'>Statistics</Link>
-                    <Link className='mx-5 font-semibold' to='blog'>Blog</Link>
-                   </div>
 
-                </div>
-            </div>
-        </nav>
 
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+                <Container>
+                    <Navbar.Brand href="/"> <img src={img} alt="" /> Quick Test</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav" className='justify-content-end'>
+                      
+                        <Nav>
+                            <Link className='text-light text-decoration-none me-5' to="/" >Home</Link>
+                            <Link className='text-light text-decoration-none me-5'  to="/quiz" >Quiz</Link>
+                            <Link className='text-light text-decoration-none me-5'  to="/statistics" >Statistics</Link>
+                            <Link className='text-light text-decoration-none me-5'  to="/blog" >Blog</Link>
+                            
+                               
+                           
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+
+
+        </div>
     );
 };
 

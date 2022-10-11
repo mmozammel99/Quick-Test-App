@@ -1,22 +1,22 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
-const Quizitem = () => {
+const Quizitem = ({ quiz }) => {
+    const { name, id, logo, total } = quiz;
     return (
-        <div>
-            <div className="card w-96 bg-base-100 shadow-xl">
-                <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
-                <div className="card-body">
-                    <h2 className="card-title">
-                        Shoes!
-                        <div className="badge badge-secondary">NEW</div>
-                    </h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div className="card-actions justify-end">
-                        <div className="badge badge-outline">Fashion</div>
-                        <div className="badge badge-outline">Products</div>
-                    </div>
+        <div className='card m-4 text-canter p-0' style={{ width: '25rem' }}>
+
+            <Card.Img variant="top" className='w-auto m-2' src={logo} />
+            <Card.Body >
+                <Card.Title className='text-center pb-3 '><h3>{name}</h3></Card.Title>
+
+
+                <div className='d-flex align-items-center justify-content-between'>
+                    <Button onClick={} variant="success">Go somewhere</Button>
+                    <h6>Total Quiz {total}</h6>
                 </div>
-            </div>
+            </Card.Body>
 
         </div>
     );
