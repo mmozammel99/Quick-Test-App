@@ -36,8 +36,8 @@ const Questions = ({ questions }) => {
         }
     }
     return (
-        <Card className="text-center col-10 col-md-7 mx-auto my-5 shadow-lg rounded border border-1 border-success p-0">
-            <div className='bg-success text-light w-100 p-3 shadow'>{question}</div>
+        <Card className="text-center col-10 col-md-7 mx-auto my-5 rounded border border-1 border-success p-0">
+            <div className='bg-success d-flex'><div className=' text-light w-100 p-3 shadow'>{question}  </div> <Ans correctAnswer={correctAnswer}> </Ans></div>
             <Card.Body>
                 <Card.Text>
                     <div className='row justify-content-center '>
@@ -50,8 +50,9 @@ const Questions = ({ questions }) => {
                         }
                     </div>
                 </Card.Text>
-                <Ans correctAnswer={correctAnswer}> </Ans>
+
             </Card.Body>
+
         </Card>
     );
 }

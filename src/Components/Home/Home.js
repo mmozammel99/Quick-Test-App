@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import bg from '../../bg.png'
+import bg from '../../img/bg.png'
 
 import Quiz from '../Quiz/Quiz';
 

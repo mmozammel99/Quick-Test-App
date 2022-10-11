@@ -1,21 +1,22 @@
 import React, { useState } from 'react';
 import Alert from 'react-bootstrap/Alert';
 import Button from 'react-bootstrap/Button';
-
+import eye from '../../img/eye.png';
 const Ans = ({correctAnswer}) => {
     const [show, setShow] = useState(false);
 
   if (show) {
     return (
-      <Alert variant="success" onClose={() => setShow(false)} dismissible>
-        <Alert.Heading>Correct Answer</Alert.Heading>
+      <Alert className='m-0' variant="success" onClose={() => setShow(false)} dismissible>
+        <Alert.Heading>Answer</Alert.Heading>
         <p>
           {correctAnswer}
           </p>
       </Alert>
     );
   }
-  return <Button className='shadow-lg' variant="success" onClick={() => setShow(true)}>Correct Answer</Button>;
+  return <Button   variant="success" onClick={() => setShow(true)}> <img src={eye} className="bg-none" alt="" />
+  </Button>;
 
 };
 
