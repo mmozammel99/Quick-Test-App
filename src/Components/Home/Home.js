@@ -1,8 +1,8 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import bg from '../../bg.png'
-import Quizitem from '../Quizitem/Quizitem';
-import Col from 'react-bootstrap/Col';
+
+import Quiz from '../Quiz/Quiz';
 
 
 
@@ -24,16 +24,8 @@ const Home = () => {
                 </div>
 
             </div>
-            <div className=" ">
-            <Col className="col row row-cols-1 row-cols-md-2 g-5 m-5 align-middle d-flex justify-content-center">
-                        {
-                            quiz.map(quiz => <Quizitem
-                                key={quiz.id}
-                                quiz={quiz}></Quizitem>)
-                        }
-
-                    </Col>
-            </div>
+            <Quiz quiz={quiz}></Quiz>
+           
                     
             
 
